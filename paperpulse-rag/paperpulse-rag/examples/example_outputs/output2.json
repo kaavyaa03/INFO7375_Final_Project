@@ -1,0 +1,16 @@
+{
+  "answer": "- Background: Summary from retrieved chunks. [source: sample1.txt, chunk: 1cfa9fab] [source: sample2.txt, chunk: fc3865c2]\n- Key points: Derived from the knowledge base. [source: sample1.txt, chunk: 1cfa9fab] [source: sample2.txt, chunk: fc3865c2]\n- Limitations: Limited to provided docs. [source: sample1.txt, chunk: 1cfa9fab] [source: sample2.txt, chunk: fc3865c2]\n",
+  "citations": [
+    {
+      "source": "sample1.txt",
+      "chunk_id": "1cfa9fab"
+    },
+    {
+      "source": "sample2.txt",
+      "chunk_id": "fc3865c2"
+    }
+  ],
+  "metrics": {
+    "retrieved_chunks": 2
+  }
+}

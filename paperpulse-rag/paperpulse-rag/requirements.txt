@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+streamlit
+pydantic
+
+langchain
+langchain-community
+langchain-text-splitters
+
+sentence-transformers
+faiss-cpu
+
+pypdf
+
+pytest
+httpx

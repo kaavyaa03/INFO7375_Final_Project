@@ -1,0 +1,16 @@
+{
+  "answer": "Based on the retrieved knowledge base, here is what is supported. [source: sample1.txt, chunk: 1cfa9fab] [source: sample2.txt, chunk: fc3865c2]",
+  "citations": [
+    {
+      "source": "sample1.txt",
+      "chunk_id": "1cfa9fab"
+    },
+    {
+      "source": "sample2.txt",
+      "chunk_id": "fc3865c2"
+    }
+  ],
+  "metrics": {
+    "retrieved_chunks": 2
+  }
+}

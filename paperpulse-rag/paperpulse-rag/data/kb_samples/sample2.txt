@@ -1,0 +1,2 @@
+Prompt engineering involves designing structured prompts, managing context,
+and handling ambiguous or unsafe user inputs.
