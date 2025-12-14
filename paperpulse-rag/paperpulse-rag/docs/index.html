@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PaperPulse RAG</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 900px; line-height: 1.6; }
+    h1 { margin-bottom: 6px; }
+    .subtitle { color: #555; margin-top: 0; }
+    .card { border: 1px solid #e5e5e5; border-radius: 10px; padding: 16px; margin: 16px 0; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 6px; }
+    a { color: #0b57d0; }
+    ul { margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>PaperPulse RAG</h1>
+  <p class="subtitle">Prompt Engineering + Retrieval-Augmented Generation (RAG) System</p>
+
+  <div class="card">
+    <h2>What this project does</h2>
+    <p>
+      PaperPulse RAG is a generative AI system that answers questions and generates summaries by grounding responses
+      strictly in retrieved documents. It demonstrates two core components: <b>Prompt Engineering</b> and <b>RAG</b>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Key features</h2>
+    <ul>
+      <li><b>Knowledge base ingestion</b> from local documents (<code>data/kb_samples</code>)</li>
+      <li><b>Chunking</b> with overlap to preserve context</li>
+      <li><b>Vector storage + retrieval</b> using FAISS (<code>data/vectorstore</code>)</li>
+      <li><b>Prompt-engineered outputs</b> with citations and safe fallback behavior</li>
+      <li><b>Metrics</b> included in responses (e.g., retrieved chunk count)</li>
+      <li><b>Interactive demo</b> via Streamlit UI + FastAPI backend</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>How to run (local demo)</h2>
+    <ol>
+      <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+      <li>Start backend: <code>python -m uvicorn app.api:app --reload --port 8000</code></li>
+      <li>Start UI: <code>streamlit run app/ui_streamlit.py</code></li>
+      <li>Click <b>Build Knowledge Base</b> and ask questions in the UI.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME">GitHub Repository</a></li>
+      <li><a href="../PATH_TO_YOUR_PDF_IN_REPO.pdf">Project PDF Report</a> (stored in this repo)</li>
+      <li>Example outputs: <code>examples/example_outputs/output1.json</code>, <code>output2.json</code></li>
+    </ul>
+    <p style="color:#777; font-size: 14px;">
+      Note: The interactive demo runs locally via Streamlit; this page is a project showcase for documentation and links.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Author</h2>
+    <p>Kaavya Loganathan</p>
+  </div>
+
+</body>
+</html>
